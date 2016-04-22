@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Filter-Title Casing</title>
+</head>
+<body ng-controller='appCtrl'>
+
+    <div>
+        Please enter the Title of the book<input type="'text" ng-model="Title" placeholder="hi"/>
+        <div>The Title of the book is : {{Title | TitleCase}}</div>
+
+    </div>
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+
+
+</body>
+</body>
+</html>
