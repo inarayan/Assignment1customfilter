@@ -8,6 +8,9 @@ angular.module('app',[])
     .filter("TitleCase",function(){
         return function(str){
 
+            if(!str){
+                return
+            }
             var newstr = str.split(" ");
             for(i=0;i<newstr.length;i++){
                 var copy = newstr[i].substring(1).toLowerCase();
